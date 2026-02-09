@@ -8,7 +8,7 @@ A remote MCP server for interacting with the GitHub API, providing tools for rep
 |-------|----------|-------------|
 | `gh_pat` | Yes | GitHub Personal Access Token for authentication |
 
-**Create a PAT:** https://github.com/settings/tokens
+**Create a PAT:** https://github.com/settings/personal-access-tokens
 
 Recommended scopes: `repo`, `read:org`, `read:user`, `read:packages`
 
@@ -286,7 +286,7 @@ tool call library/github -m get_file_contents -p owner=github -p repo=github-mcp
 
 GitHub MCP uses a Personal Access Token (PAT) for authentication. Create one at:
 
-https://github.com/settings/tokens
+https://github.com/settings/personal-access-tokens
 
 **Recommended scopes:**
 - `repo` - Full control of private repositories
