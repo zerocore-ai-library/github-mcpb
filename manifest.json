@@ -1,7 +1,7 @@
 {
   "manifest_version": "0.3",
   "name": "github",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "display_name": "GitHub MCP",
   "description": "An MCP server for interacting with the GitHub API, providing tools for repositories, issues, pull requests, and more.",
   "homepage": "https://github.com",
