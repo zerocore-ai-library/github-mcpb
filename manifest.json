@@ -1,12 +1,24 @@
 {
   "manifest_version": "0.3",
   "name": "github",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "display_name": "GitHub MCP",
   "description": "An MCP server for interacting with the GitHub API, providing tools for repositories, issues, pull requests, and more.",
   "homepage": "https://github.com",
   "documentation": "https://github.com/github/github-mcp-server",
-  "icon": "icon.png",
+  "icon": "icon-light.png",
+  "icons": [
+    {
+      "src": "icon-light.png",
+      "size": "512x512",
+      "theme": "light"
+    },
+    {
+      "src": "icon-dark.png",
+      "size": "512x512",
+      "theme": "dark"
+    }
+  ],
   "author": {
     "name": "Stephen Akinyemi"
   },
