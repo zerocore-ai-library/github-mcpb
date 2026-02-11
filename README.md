@@ -2,6 +2,47 @@
 
 A remote MCP server for interacting with the GitHub API, providing tools for repositories, issues, pull requests, and more.
 
+## Setup
+
+### Using tool CLI
+
+Install the CLI from https://github.com/anthropics/tool-cli
+
+```bash
+# Install from tool.store
+tool install library/github
+```
+
+```bash
+# View available tools
+tool info library/github
+```
+
+```bash
+# List issues
+tool call library/github -m list_issues -p owner=github -p repo=github-mcp-server
+```
+
+```bash
+# Get file contents
+tool call library/github -m get_file_contents -p owner=github -p repo=github-mcp-server -p path=README.md
+```
+
+### Authentication
+
+GitHub MCP uses a Personal Access Token (PAT) for authentication. Create one at:
+
+https://github.com/settings/personal-access-tokens
+
+**Recommended scopes:**
+- `repo` - Full control of private repositories
+- `read:org` - Read org membership
+- `read:user` - Read user profile data
+- `read:packages` - Read packages
+
+**Connection endpoint:**
+- HTTP: `https://api.githubcopilot.com/mcp`
+
 ## Configuration
 
 | Field | Required | Description |
@@ -255,47 +296,6 @@ Assign GitHub Copilot to work on an issue.
 | `issue_number` | number | Yes | Issue number |
 | `base_ref` | string | No | Branch to start work from |
 | `custom_instructions` | string | No | Additional guidance for Copilot |
-
-## Setup
-
-### Using tool CLI
-
-Install the CLI from https://github.com/anthropics/tool-cli
-
-```bash
-# Install from tool.store
-tool install library/github
-```
-
-```bash
-# View available tools
-tool info library/github
-```
-
-```bash
-# List issues
-tool call library/github -m list_issues -p owner=github -p repo=github-mcp-server
-```
-
-```bash
-# Get file contents
-tool call library/github -m get_file_contents -p owner=github -p repo=github-mcp-server -p path=README.md
-```
-
-### Authentication
-
-GitHub MCP uses a Personal Access Token (PAT) for authentication. Create one at:
-
-https://github.com/settings/personal-access-tokens
-
-**Recommended scopes:**
-- `repo` - Full control of private repositories
-- `read:org` - Read org membership
-- `read:user` - Read user profile data
-- `read:packages` - Read packages
-
-**Connection endpoint:**
-- HTTP: `https://api.githubcopilot.com/mcp`
 
 ## License
 
