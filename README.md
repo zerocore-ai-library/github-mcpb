@@ -6,7 +6,7 @@ A remote MCP server for interacting with the GitHub API, providing tools for rep
 
 ### Using tool CLI
 
-Install the CLI from https://github.com/anthropics/tool-cli
+Install the CLI from https://github.com/zerocore-ai/tool-cli
 
 ```bash
 # Install from tool.store
